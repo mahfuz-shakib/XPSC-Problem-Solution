@@ -9,7 +9,7 @@ using namespace std;
 void Dekhen_Ja_Bhalo_Mone_Hoy()
 {
     int n; cin >> n;
-    while(n--)
+    while(n)
     {
         cout << n <<" ";
         n--;
