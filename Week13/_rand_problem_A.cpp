@@ -18,12 +18,11 @@ const int Mod=1e9+7;
 void Bhai_Code_Ekhane()
 {
     int n; cin >> n;
-    int mx=-1, mn=1001, ans=0;
+    int mx=-1, mn=1001, ans;
     vector<int>v(n);
-    for(int i=0;i<n;i++)
+    for(auto &x:v)
     {
-        int x;  cin >> x;
-        v.push_back(x);
+        cin >> x;
         if(mx<=x) mx = x;
         if(mn>x) mn = x;
     }
@@ -32,7 +31,7 @@ void Bhai_Code_Ekhane()
     {
         ans = max(ans, v[i]-v[i+1]);
     }
-    cout <<  ans;
+    cout << ans;
 }
 signed main()
 {
