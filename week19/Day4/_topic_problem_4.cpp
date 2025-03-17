@@ -56,13 +56,13 @@ signed main()
 {
     Mahfuz_Shakib
     int n,q; cin >> n >> q;
+    n=(1<<n);
     for(int i=1;i<=n;i++) cin >> a[i];
     build(1,1,n);
     while(q--)
     {
 
         int i,v; cin >> i >> v;
-        i++;
         update(1,1,n,i,v);
         cout << t[1]<<endl;
     }
